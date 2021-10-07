@@ -1,0 +1,30 @@
+{
+  "name": "order-processing-module",
+  "version": "1.0.0",
+  "description": "Process order updates",
+  "main": "./src/index.js",
+  "scripts": {
+    "test": "terraform workspace select $projectKey || terraform workspace new $projectKey",
+    "prebuild": "mkdir -p code && terraform init infra-as-code/ && yarn install",
+    "start": "export $(cat .env | xargs) && node ./src/index.js",
+    "build": "zip ./code/code.zip package.json ./src/*.js",
+    "plan": "export $(cat .env | xargs) && yarn build && yarn configure-workspace && terraform plan -var auth_url=$authUrl -var api_url=$apiUrl -var project_key=$projectKey -var client_id=$clientId -var client_secret=$clientSecret -var gcp_region=$gcp_region -var module_name=$module_name infra-as-code/",
+    "configure-workspace": "export $(cat .env | xargs) && terraform workspace select $projectKey || terraform workspace new $projectKey",
+    "deploy": "export $(cat .env | xargs) && yarn build && yarn configure-workspace && terraform apply -var auth_url=$authUrl -var api_url=$apiUrl -var project_key=$projectKey -var client_id=$clientId -var client_secret=$clientSecret -var gcp_region=$gcp_region -var module_name=$module_name infra-as-code/",
+    "destroy": "export $(cat .env | xargs) && yarn configure-workspace && terraform destroy -var auth_url=$authUrl -var api_url=$apiUrl -var project_key=$projectKey -var client_id=$clientId -var client_secret=$clientSecret -var gcp_region=$gcp_region -var module_name=$module_name infra-as-code/"
+  },
+  "keywords": [
+    "commercetools", 
+    "gcp"
+  ],
+  "author": "Ivo Bronsveld",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@commercetools/api-request-builder": "^5.3.2",
+    "@commercetools/sdk-client": "^2.1.0",
+    "@commercetools/sdk-middleware-auth": "^5.1.2",
+    "@commercetools/sdk-middleware-http": "^5.2.1",
+    "base-64": "^0.1.0",
+    "node-fetch": "^2.2.0"
+  }
+}

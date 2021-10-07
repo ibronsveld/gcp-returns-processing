@@ -1,0 +1,263 @@
+{
+  "action": "Create",
+  "resource": {
+    "type": "Cart",
+    "id": "70d255f0-7845-4aed-9d79-c9a6418d1d7e",
+    "version": 6,
+    "createdAt": "2020-04-22T14:05:48.744Z",
+    "lastModifiedAt": "2020-04-22T14:06:09.453Z",
+    "lastModifiedBy": {
+      "isPlatformClient": true,
+      "user": {
+        "typeId": "user",
+        "id": "f0b2c604-54ef-439c-b354-8d4f61f41060"
+      }
+    },
+    "createdBy": {
+      "isPlatformClient": true,
+      "user": {
+        "typeId": "user",
+        "id": "f0b2c604-54ef-439c-b354-8d4f61f41060"
+      }
+    },
+    "customerId": "fd4c5a3e-18e4-48ba-b876-b34dbab19146",
+    "customerEmail": "siawash.shibani@commercetools.com",
+    "lineItems": [
+      {
+        "id": "f423792f-9bd4-4fac-8d7c-f69505169816",
+        "productId": "8aa03eb9-fae1-485f-b624-6c154fb23780",
+        "name": {
+          "en-GB": "smart EQ fortwo"
+        },
+        "productType": {
+          "typeId": "product-type",
+          "id": "fa1ce8e7-7191-471a-a869-fbaa2372329e",
+          "version": 1
+        },
+        "productSlug": {
+          "en-GB": "smart-eq-fortwo"
+        },
+        "variant": {
+          "id": 1,
+          "sku": "eq-fortwo",
+          "prices": [
+            {
+              "value": {
+                "type": "centPrecision",
+                "currencyCode": "EUR",
+                "centAmount": 1400000,
+                "fractionDigits": 2
+              },
+              "id": "d64dd926-1191-4f49-9fd9-d3bbcfa738b2"
+            }
+          ],
+          "images": [],
+          "attributes": [
+            {
+              "name": "motortype",
+              "value": "Separately excited three-phase synchronous motor"
+            },
+            {
+              "name": "continuousOutput",
+              "value": " 41"
+            },
+            {
+              "name": "maxOutput",
+              "value": "61"
+            }
+          ],
+          "assets": []
+        },
+        "price": {
+          "value": {
+            "type": "centPrecision",
+            "currencyCode": "EUR",
+            "centAmount": 1400000,
+            "fractionDigits": 2
+          },
+          "id": "d64dd926-1191-4f49-9fd9-d3bbcfa738b2"
+        },
+        "quantity": 1,
+        "discountedPricePerQuantity": [],
+        "taxRate": {
+          "name": "21% BTW",
+          "amount": 0.21,
+          "includedInPrice": true,
+          "country": "NL",
+          "id": "d6dXegBL",
+          "subRates": []
+        },
+        "state": [
+          {
+            "quantity": 1,
+            "state": {
+              "typeId": "state",
+              "id": "2c35d034-c819-4019-806e-5a592112ffa3"
+            }
+          }
+        ],
+        "priceMode": "Platform",
+        "totalPrice": {
+          "type": "centPrecision",
+          "currencyCode": "EUR",
+          "centAmount": 1400000,
+          "fractionDigits": 2
+        },
+        "taxedPrice": {
+          "totalNet": {
+            "type": "centPrecision",
+            "currencyCode": "EUR",
+            "centAmount": 1157025,
+            "fractionDigits": 2
+          },
+          "totalGross": {
+            "type": "centPrecision",
+            "currencyCode": "EUR",
+            "centAmount": 1400000,
+            "fractionDigits": 2
+          }
+        },
+        "lineItemMode": "Standard"
+      },
+      {
+        "id": "8847825e-e312-4fe0-8825-9f8713441c39",
+        "productId": "c9034467-317a-4597-8a7b-0889fe31dfb6",
+        "name": {
+          "en-GB": "Company Lease Plan A"
+        },
+        "productType": {
+          "typeId": "product-type",
+          "id": "e467b09f-58ea-4926-a9d1-738c47d28a82",
+          "version": 1
+        },
+        "productSlug": {
+          "en-GB": "company-lease-plan-a"
+        },
+        "variant": {
+          "id": 1,
+          "sku": "plan-a",
+          "prices": [
+            {
+              "value": {
+                "type": "centPrecision",
+                "currencyCode": "EUR",
+                "centAmount": 0,
+                "fractionDigits": 2
+              },
+              "id": "1c8b067c-72fd-4167-834f-81a79d486b18"
+            }
+          ],
+          "images": [],
+          "attributes": [
+            {
+              "name": "interval",
+              "value": 36
+            }
+          ],
+          "assets": []
+        },
+        "price": {
+          "value": {
+            "type": "centPrecision",
+            "currencyCode": "EUR",
+            "centAmount": 0,
+            "fractionDigits": 2
+          },
+          "id": "1c8b067c-72fd-4167-834f-81a79d486b18"
+        },
+        "quantity": 1,
+        "discountedPricePerQuantity": [],
+        "taxRate": {
+          "name": "21% BTW",
+          "amount": 0.21,
+          "includedInPrice": true,
+          "country": "NL",
+          "id": "d6dXegBL",
+          "subRates": []
+        },
+        "state": [
+          {
+            "quantity": 1,
+            "state": {
+              "typeId": "state",
+              "id": "2c35d034-c819-4019-806e-5a592112ffa3"
+            }
+          }
+        ],
+        "priceMode": "Platform",
+        "totalPrice": {
+          "type": "centPrecision",
+          "currencyCode": "EUR",
+          "centAmount": 0,
+          "fractionDigits": 2
+        },
+        "taxedPrice": {
+          "totalNet": {
+            "type": "centPrecision",
+            "currencyCode": "EUR",
+            "centAmount": 0,
+            "fractionDigits": 2
+          },
+          "totalGross": {
+            "type": "centPrecision",
+            "currencyCode": "EUR",
+            "centAmount": 0,
+            "fractionDigits": 2
+          }
+        },
+        "lineItemMode": "Standard"
+      }
+    ],
+    "cartState": "Active",
+    "totalPrice": {
+      "type": "centPrecision",
+      "currencyCode": "EUR",
+      "centAmount": 1400000,
+      "fractionDigits": 2
+    },
+    "taxedPrice": {
+      "totalNet": {
+        "type": "centPrecision",
+        "currencyCode": "EUR",
+        "centAmount": 1157025,
+        "fractionDigits": 2
+      },
+      "totalGross": {
+        "type": "centPrecision",
+        "currencyCode": "EUR",
+        "centAmount": 1400000,
+        "fractionDigits": 2
+      },
+      "taxPortions": [
+        {
+          "rate": 0.21,
+          "amount": {
+            "type": "centPrecision",
+            "currencyCode": "EUR",
+            "centAmount": 242975,
+            "fractionDigits": 2
+          },
+          "name": "21% BTW"
+        }
+      ]
+    },
+    "customLineItems": [],
+    "discountCodes": [],
+    "inventoryMode": "None",
+    "taxMode": "Platform",
+    "taxRoundingMode": "HalfEven",
+    "taxCalculationMode": "LineItemLevel",
+    "deleteDaysAfterLastModification": 1,
+    "refusedGifts": [],
+    "origin": "Merchant",
+    "shippingAddress": {
+      "id": "T1Z0kVZl",
+      "country": "NL"
+    },
+    "billingAddress": {
+      "id": "T1Z0kVZl",
+      "country": "NL"
+    },
+    "itemShippingAddresses": []
+  }
+}

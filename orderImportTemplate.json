@@ -1,0 +1,20 @@
+{
+  "customerId": "a9c644b1-78ff-4b8f-9aa3-83d87542416f",
+  "customLineItems": [
+    {      
+      "name": {
+        "en": ""
+      },
+      "slug": "product",      
+      "money": {
+        "currencyCode": "EUR",
+        "centAmount": 4200  
+      },
+      "quantity": 1
+    }
+  ],
+  "totalPrice": {    
+    "currencyCode": "EUR",
+    "centAmount": 4200  
+  }
+}

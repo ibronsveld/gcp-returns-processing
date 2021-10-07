@@ -1,0 +1,6 @@
+node_modules/
+.terraform/
+code/
+.DS_Store
+.env
+account-admin.json

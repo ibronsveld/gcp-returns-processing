@@ -1,0 +1,12 @@
+{
+    "notificationType": "ResourceUpdated",
+    "projectKey": "bq-ct-demo",
+    "resource": {
+        "typeId": "order",
+        "id": "466e4748-76dd-4487-9ddc-98e5a0214288"
+    },
+    "resourceUserProvidedIdentifiers": {},
+    "version": 1,
+    "oldVersion": 1,
+    "modifiedAt": "2020-06-22T16:30:36.315Z"
+}
