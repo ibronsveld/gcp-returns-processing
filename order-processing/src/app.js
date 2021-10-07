@@ -21,7 +21,7 @@ const AppInit = async (input) => {
         //load order to process further
         _services.client.execute(orderRequest).then(res => {
             const order = res.body;                        
-            console.log(order);
+            
             if (order.returnInfo && order.returnInfo.length > 0) {                
                 
                 const totalNumberOfReturns = order.returnInfo.length;
@@ -31,7 +31,12 @@ const AppInit = async (input) => {
                         returnInfo.items.forEach(item => {                            
                             
                             // lineItem should contain more product data
-                            const lineItem = order.lineItems.find(li => li.id === item.lineItemId );
+                            let lineItem = order.lineItems.find(li => li.id === item.lineItemId );
+
+                            if (!lineItem) {
+                                lineItem = order.customLineItems.find(li => li.id === item.lineItemId );
+                            }
+                            
                             
                             // Some additional info
                             const returnReason = item.comment;
