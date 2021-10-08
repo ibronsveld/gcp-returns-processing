@@ -34,10 +34,9 @@ const AppInit = async (input) => {
                             let lineItem = order.lineItems.find(li => li.id === item.lineItemId );
 
                             if (!lineItem) {
-                                lineItem = order.customLineItems.find(li => li.id === item.lineItemId );
+                                lineItem = order.customLineItems.find(li => li.id === item.customLineItemId );
                             }
-                            
-                            
+                                                        
                             // Some additional info
                             const returnReason = item.comment;
                             
